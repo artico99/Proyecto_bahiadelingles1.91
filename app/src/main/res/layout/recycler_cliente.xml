@@ -11,6 +11,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/ListaCliente"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:padding="20dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
