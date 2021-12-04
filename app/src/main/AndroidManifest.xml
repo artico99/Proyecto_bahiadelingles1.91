@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyecto_bahiadelingles">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyecto_bahiadelingles">
+        <activity
+            android:name=".Vista_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".Ver_loft"
+            android:exported="false" />
+        <activity
+            android:name=".crearDB"
+            android:exported="true" />
+        <activity
+            android:name=".Insertar_loft"
+            android:exported="true" />
+        <activity
+            android:name=".Listar_loft"
+            android:exported="true" />
+        <activity
+            android:name=".MenuPrincipalUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".vista_usuario_loft"
+            android:exported="true" />
+        <activity
+            android:name=".editar_loft"
+            android:exported="true" />
+        <activity
+            android:name=".iniciarDB"
+            android:exported="true" />
+        <activity
+            android:name=".Insertar_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".Vista_usuario_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".Listar_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".Ver_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".editar_cliente"
+            android:exported="true" />
+        <activity
+            android:name=".editar_administrador"
+            android:exported="true" />
+        <activity
+            android:name=".Insertar_Administracion"
+            android:exported="true" />
+        <activity
+            android:name=".Listar_Administracion"
+            android:exported="true" />
+        <activity
+            android:name=".LoginAd"
+            android:exported="true" />
+        <activity
+            android:name=".ver_Administracion"
+            android:exported="true" />
+        <activity
+            android:name=".vista_usuario_administracion"
+            android:exported="true" />
+    </application>
+
+</manifest>

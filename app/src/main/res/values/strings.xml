@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">bahia_del_ingles</string>
+
+    <string name="invalid_mail">Ingrese un correo válido</string>
+    <string name="invalid_password">Ingrese una contraseña mayor a 6 dígitos</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+</resources>

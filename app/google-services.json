@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264866321367",
+    "project_id": "miproyecto-de18c",
+    "storage_bucket": "miproyecto-de18c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264866321367:android:108ed3e83e8fd983b27192",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_bahiadelingles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264866321367-c3ftlnstf0cpjvk063mmi4ht0qoen7u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgmaAYjbxAQLeuyNDyIz8oNS-EFMbDoMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264866321367-c3ftlnstf0cpjvk063mmi4ht0qoen7u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

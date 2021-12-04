@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controlador.RegistrarCliente"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearAgregarLoft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/estilo_bordes"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingBottom="100sp">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar nuevo cliente"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="565dp"
+            android:orientation="vertical"
+            android:padding="20sp"
+            android:paddingTop="20sp">
+
+            <TextView
+                android:id="@+id/viewNombreCliente"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtNombreClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingresar nombre"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/viewComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apellido"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtApellidoClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingresar apellido"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rut"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtRutClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingresar rut"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="telefono"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtTelefonoClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingresar teléfono de contacto"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Correo"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtCorreoClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Escribir correo"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Numero de Loft"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtNumeroClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingresar n° de loft"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comentario"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtComentarioClienteInsertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="escribir un comentario"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnIngresarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar nuevo cliente" />
+
+    </LinearLayout>
+</LinearLayout>
