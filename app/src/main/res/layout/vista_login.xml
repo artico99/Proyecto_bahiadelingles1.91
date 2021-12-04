@@ -9,22 +9,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#6D81CC"
         android:orientation="vertical"
         android:padding="20sp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_height="315dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView3"
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
-                android:layout_height="110dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Inicio de sesión"
-                android:textAlignment="center"
-                android:textSize="16sp" />
+                app:srcCompat="@drawable/logo_2022" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,7 +78,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Iniciar sesión" />
+                android:text="Iniciar sesión"
+                android:backgroundTint="#0c1230"/>
 
         </LinearLayout>
 
@@ -93,7 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Registrar" />
+                android:text="Registrar"
+                android:backgroundTint="#0c1230"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

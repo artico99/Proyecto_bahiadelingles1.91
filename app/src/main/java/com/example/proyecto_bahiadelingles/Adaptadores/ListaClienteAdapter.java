@@ -63,8 +63,6 @@ public class ListaClienteAdapter extends RecyclerView.Adapter<ListaClienteAdapte
             tvNombreCliente = itemView.findViewById(R.id.tvNombreCliente);
             tvApellidoCliente = itemView.findViewById(R.id.tvApellidoCliente);
             tvRutCliente = itemView.findViewById(R.id.tvRutCliente);
-            tvTelefonoCliente = itemView.findViewById(R.id.tvTelefonoCliente);
-            tvCorreoCliente = itemView.findViewById(R.id.tvCorreoCliente);
             tvNumLoftCliente = itemView.findViewById(R.id.tvNumLoftCliente);
             tvComentarioCliente = itemView.findViewById(R.id.tvComentarioCliente);
 

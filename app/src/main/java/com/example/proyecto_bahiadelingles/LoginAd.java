@@ -30,7 +30,7 @@ public class LoginAd extends AppCompatActivity {
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginAd.this, Insertar_cliente.class);
+                Intent intent = new Intent(LoginAd.this, Insertar_Administracion.class);
                 startActivity(intent);
             }
         });
