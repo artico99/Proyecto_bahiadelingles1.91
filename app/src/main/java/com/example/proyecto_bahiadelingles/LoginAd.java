@@ -24,16 +24,16 @@ public class LoginAd extends AppCompatActivity {
         edtUsuario = findViewById(R.id.edtUsuario);
         edtContraseña = findViewById(R.id.edtContraseña);
         btnIngresar = (Button) findViewById(R.id.btnIngresarAd);
-        btnRegistro = (Button) findViewById(R.id.btnRegistro);
+        //btnRegistro = (Button) findViewById(R.id.btnRegistro);
         Dbadministracion dbadministracion = new Dbadministracion(LoginAd.this);
 
-        btnRegistro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginAd.this, Insertar_Administracion.class);
-                startActivity(intent);
-            }
-        });
+        //btnRegistro.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+          //  public void onClick(View view) {
+         //       Intent intent = new Intent(LoginAd.this, Insertar_Administracion.class);
+           //     startActivity(intent);
+           // }
+        //});
 
         btnIngresar.setOnClickListener(new View.OnClickListener()
         {

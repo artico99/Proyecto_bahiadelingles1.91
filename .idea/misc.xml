@@ -4,44 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_lista_ad_re.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_menu_ad.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_recy_view_ad.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_ad.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_cliente.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_loft.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_vista_cliente.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/iniciar_db.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_administracion.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_cliente.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_lofts.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/menu_usuario_principal.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/recycler_cliente.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/recycler_loft.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_cliente.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_duenos.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_editar_trabajador.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_insertar_cliente.xml" value="0.11775362318840579" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_insertar_loft.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_listatrabajadores.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_login.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_registrar_ad.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_registrar_trabajador.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_sesion_iniciada_prueba.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_usuario_clientes.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_usuario_loft.xml" value="0.23369565217391305" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_lista_ad_re.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_menu_ad.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_recy_view_ad.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_ver_ad.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_ver_cliente.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_ver_loft.xml" value="0.33" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/activity_vista_cliente.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/iniciar_db.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/lista_item_administracion.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/lista_item_cliente.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/menu_usuario_principal.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/recycler_cliente.xml" value="0.264" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/recycler_loft.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_cliente.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_editar_cliente.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_editar_loft.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_editar_trabajador.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_insertar_cliente.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_insertar_loft.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_menuprincipal_usuario.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_registrar_ad.xml" value="0.3020833333333333" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_registrar_trabajador.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_usuario_clientes.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Jean/AndroidStudioProjects/Proyecto_bahiadelingles1.91/app/src/main/res/layout/vista_usuario_loft.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
