@@ -2,21 +2,94 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#909EF8"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:background="#909EF8"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="70sp"
+        android:paddingBottom="15dp"
+        >
 
-        <TextView
-            android:id="@+id/viewNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/viewContraseña"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre"
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contraseña"
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#909EF8"
+        android:paddingLeft="70sp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textview"
+                android:textAlignment="textStart"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewContraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textview"
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

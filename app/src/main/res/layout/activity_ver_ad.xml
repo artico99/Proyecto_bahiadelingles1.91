@@ -4,7 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="#909EF8">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar datos de administrador"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +40,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/textView29"
@@ -49,12 +61,14 @@
         android:id="@+id/btnGuardarAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar cambios" />
+        android:text="Guardar cambios"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fbEditarAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -62,5 +76,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:layout_gravity="bottom|end"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 </LinearLayout>

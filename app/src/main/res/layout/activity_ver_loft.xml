@@ -4,17 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
     tools:context=".Ver_loft"
-    android:orientation="horizontal"
-    android:padding="20sp">
+    android:background="#909EF8">
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar datos de loft"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="20sp"
         android:paddingTop="100dp"
-        tools:ignore="MissingConstraints"
-        android:padding="20sp">
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/viewNombreCliente"

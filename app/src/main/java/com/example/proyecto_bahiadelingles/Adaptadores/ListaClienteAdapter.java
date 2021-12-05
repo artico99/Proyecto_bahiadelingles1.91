@@ -45,9 +45,7 @@ public class ListaClienteAdapter extends RecyclerView.Adapter<ListaClienteAdapte
 
         holder.tvNombreCliente.setText(listaCliente.get(position).getNombre());
         holder.tvApellidoCliente.setText(listaCliente.get(position).getApellido());
-        holder.tvRutCliente.setText(listaCliente.get(position).getRut());
         holder.tvNumLoftCliente.setText(listaCliente.get(position).getNumeroLoft());
-        holder.tvComentarioCliente.setText(listaCliente.get(position).getComentario());
     }
 
     @Override
@@ -59,7 +57,7 @@ public class ListaClienteAdapter extends RecyclerView.Adapter<ListaClienteAdapte
 
     public class ClienteViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tvNombreCliente, tvApellidoCliente, tvRutCliente, tvTelefonoCliente, tvCorreoCliente, tvNumLoftCliente, tvComentarioCliente;
+        TextView tvNombreCliente, tvApellidoCliente, tvNumLoftCliente;
 
         public ClienteViewHolder(@NonNull View itemView)
         {
@@ -67,9 +65,7 @@ public class ListaClienteAdapter extends RecyclerView.Adapter<ListaClienteAdapte
 
             tvNombreCliente = itemView.findViewById(R.id.tvNombreCliente);
             tvApellidoCliente = itemView.findViewById(R.id.tvApellidoCliente);
-            tvRutCliente = itemView.findViewById(R.id.tvRutCliente);
             tvNumLoftCliente = itemView.findViewById(R.id.tvNumLoftCliente);
-            tvComentarioCliente = itemView.findViewById(R.id.tvComentarioCliente);
 
             itemView.setOnClickListener(new View.OnClickListener()
             {

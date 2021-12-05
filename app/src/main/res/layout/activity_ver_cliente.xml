@@ -4,7 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="#909EF8">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar datos de cliente"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -132,7 +142,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
 
         <TextView
             android:id="@+id/textView35"
@@ -161,6 +172,7 @@
         android:id="@+id/fbEditarCliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
@@ -168,6 +180,7 @@
         android:id="@+id/fbEliminarCliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 </LinearLayout>

@@ -3,16 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlador.AgregarLoft"
-    android:id="@+id/conte">
+    android:id="@+id/conte"
+    android:background="#6D81CC">
 
     <LinearLayout
         android:id="@+id/linearAgregarLoft"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/estilo_bordes"
-        android:backgroundTint="@color/white"
+        android:background="#6D81CC"
         android:paddingBottom="100sp"
         android:padding="20dp"
         >
@@ -24,7 +23,8 @@
             android:text="Registrar nuevo Loft"
             android:textSize="20dp"
             android:textAlignment="center"
-            android:paddingBottom="20sp"/>
+            android:paddingBottom="20sp"
+            android:textStyle="bold"/>
 
         <LinearLayout
             android:layout_width="372dp"
@@ -47,8 +47,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="ingresar nombre"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/viewComentario"
@@ -64,8 +64,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="ingresar comentario"
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
