@@ -122,6 +122,7 @@
                 android:id="@+id/btnVolverClienteEditar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_on_surface_stroke"
                 android:text="Enviar datos" />
         </LinearLayout>
 

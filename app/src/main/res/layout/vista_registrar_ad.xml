@@ -85,9 +85,8 @@
             android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crear nuevo administrador"
-            android:backgroundTint="#0c1230"
-            />
+            android:backgroundTint="@color/material_on_surface_stroke"
+            android:text="Crear nuevo administrador" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

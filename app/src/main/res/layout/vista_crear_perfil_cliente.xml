@@ -136,8 +136,9 @@
                 android:id="@+id/btnCrearPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_on_surface_stroke"
                 android:text="Crear perfil"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
         </LinearLayout>
 
         <ImageView

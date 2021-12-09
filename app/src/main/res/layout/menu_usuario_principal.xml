@@ -74,13 +74,13 @@
             android:padding="15dp">
 
             <Button
-                android:id="@+id/btnVistaTrabajador"
+                android:id="@+id/btnVistaCrearPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/material_on_surface_stroke"
                 android:padding="12dp"
-                android:text="Registro de trabajador"
+                android:text="Crear perfil a cliente"
                 android:textSize="15sp" />
         </LinearLayout>
 

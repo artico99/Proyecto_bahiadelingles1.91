@@ -35,7 +35,7 @@ public class ListaAdministracionAdapter extends RecyclerView.Adapter<ListaAdmini
     public void onBindViewHolder(@NonNull AdministracionViewHolder holder, int position) {
 
         holder.viewNombre.setText(listaAdministracion.get(position).getUsuario());
-        holder.viewContraseña.setText(listaAdministracion.get(position).getContraseña());
+        holder.viewContraseña.setText("*****");
     }
 
     @Override

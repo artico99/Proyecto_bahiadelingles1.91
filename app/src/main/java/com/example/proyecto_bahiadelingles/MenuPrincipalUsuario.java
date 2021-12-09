@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MenuPrincipalUsuario extends AppCompatActivity
 {
 
-    Button btnVistaLoft, btnVistaClientes, btnVistaAdministracion;
+    Button btnVistaLoft, btnVistaClientes, btnVistaAdministracion,btnVistaCrearPerfil;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -22,6 +22,7 @@ public class MenuPrincipalUsuario extends AppCompatActivity
         btnVistaLoft = (Button)findViewById(R.id.btnVistaLoft);
         btnVistaClientes = (Button)findViewById(R.id.btnVistaClientes);
         btnVistaAdministracion = (Button)findViewById(R.id.btnVistaAdministrador);
+        btnVistaCrearPerfil = (Button)findViewById(R.id.btnVistaCrearPerfil);
 
         btnVistaLoft.setOnClickListener(new View.OnClickListener()
         {
@@ -47,6 +48,13 @@ public class MenuPrincipalUsuario extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuPrincipalUsuario.this, vista_usuario_administracion.class);
+                startActivity(intent);
+            }
+        });
+        btnVistaCrearPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuPrincipalUsuario.this, Crear_perfil_cliente.class);
                 startActivity(intent);
             }
         });
