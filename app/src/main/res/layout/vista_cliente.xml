@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#909EF8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,12 +49,11 @@
 
             <Switch
                 android:id="@+id/switch1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:showText="false"
-                android:text="Agua"
-                />
+                android:text="Agua" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,7 +65,7 @@
 
             <Switch
                 android:id="@+id/switch2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Luz" />
         </LinearLayout>
@@ -79,7 +79,7 @@
 
             <Switch
                 android:id="@+id/switch3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tv"
                 android:textAlignment="center" />
@@ -94,7 +94,7 @@
 
             <Switch
                 android:id="@+id/switch4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="En reserva:  SI / NO"
                 android:textAlignment="center" />
@@ -115,7 +115,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
@@ -124,6 +124,12 @@
                 android:layout_height="wrap_content"
                 android:text="Enviar datos" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_2022" />
 
     </LinearLayout>
 
