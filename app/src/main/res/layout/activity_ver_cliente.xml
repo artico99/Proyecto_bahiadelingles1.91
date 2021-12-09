@@ -166,6 +166,7 @@
         android:id="@+id/btnGuardarClienteVer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_on_surface_stroke"
         android:text="Guardar cambios" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -41,7 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:paddingBottom="20dp"
+        app:passwordToggleEnabled="true">
 
         <TextView
             android:id="@+id/textView29"
@@ -54,15 +55,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnGuardarAd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar cambios"
-        />
+        android:backgroundTint="@color/material_on_surface_stroke"
+        android:text="Guardar cambios" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fbEditarAd"

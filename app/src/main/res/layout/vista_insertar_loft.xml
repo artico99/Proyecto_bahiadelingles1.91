@@ -88,9 +88,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:height="48dp"
+                android:backgroundTint="@color/material_on_surface_stroke"
                 android:text="Malo / Bueno"
-                tools:ignore="UseSwitchCompatOrMaterialXml"
-                android:height="48dp"/>
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
         </LinearLayout>
 
         <LinearLayout
@@ -104,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/material_on_surface_stroke"
                 android:text="Volver" />
 
             <Button
@@ -111,6 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/material_on_surface_stroke"
                 android:text="Agregar" />
         </LinearLayout>
 

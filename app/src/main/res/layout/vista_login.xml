@@ -50,7 +50,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="123dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:passwordToggleEnabled="true">
+
 
             <TextView
                 android:id="@+id/textView5"
@@ -65,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPassword" />
         </LinearLayout>
 
         <LinearLayout
