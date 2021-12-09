@@ -71,6 +71,9 @@
         <activity
             android:name=".vista_usuario_administracion"
             android:exported="true" />
+        <activity
+            android:name=".Crear_perfil_cliente"
+            android:exported="true" />
     </application>
 
 </manifest>

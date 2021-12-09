@@ -68,7 +68,6 @@ public class ListaLoftAdapter extends RecyclerView.Adapter<ListaLoftAdapter.Loft
                     Intent intent = new Intent(context, Ver_loft.class);
                     intent.putExtra("ID", listaLofts.get(getAdapterPosition()).getId());
                     context.startActivity(intent);
-
                 }
             });
         }
