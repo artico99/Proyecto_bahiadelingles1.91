@@ -18,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class Ver_loft extends AppCompatActivity
 {
 
-    EditText edtNombreLoft, edtComentarioLoft;
+    EditText edtNombreLoft, edtComentarioLoft,edtId;
     Button btnGuardarLoft;
     FloatingActionButton fbEditarLoft, fbEliminarLoft;
 
@@ -59,6 +59,7 @@ public class Ver_loft extends AppCompatActivity
 
         if(loft != null)
         {
+            //edtId.setText(loft.getId());
             edtNombreLoft.setText(loft.getNombre());
             edtComentarioLoft.setText(loft.getComentario());
             btnGuardarLoft.setVisibility(View.INVISIBLE);

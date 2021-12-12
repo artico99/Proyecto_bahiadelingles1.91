@@ -14,7 +14,7 @@ import com.example.proyecto_bahiadelingles.db.Dbadministracion;
 public class LoginAd extends AppCompatActivity {
 
     EditText edtUsuario,edtContraseña;
-    Button btnIngresar,btnRegistro;
+    Button btnIngresar,btnLoginUs;
 
 
     @Override
@@ -24,16 +24,16 @@ public class LoginAd extends AppCompatActivity {
         edtUsuario = findViewById(R.id.edtUsuario);
         edtContraseña = findViewById(R.id.edtContraseña);
         btnIngresar = (Button) findViewById(R.id.btnIngresarAd);
-        //btnRegistro = (Button) findViewById(R.id.btnRegistro);
+        btnLoginUs = (Button) findViewById(R.id.btnLoginUs);
         Dbadministracion dbadministracion = new Dbadministracion(LoginAd.this);
 
-        //btnRegistro.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-          //  public void onClick(View view) {
-         //       Intent intent = new Intent(LoginAd.this, Insertar_Administracion.class);
-           //     startActivity(intent);
-           // }
-        //});
+        btnLoginUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               Intent intent = new Intent(LoginAd.this, LoginUs.class);
+               startActivity(intent);
+            }
+        });
 
         btnIngresar.setOnClickListener(new View.OnClickListener()
         {

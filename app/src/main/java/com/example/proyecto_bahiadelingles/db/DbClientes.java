@@ -190,4 +190,25 @@ public class DbClientes extends DbHelper{
         return correcto;
     }
 
+    public int login (String loft)
+    {
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        int a=0;
+        Cursor cr=db.rawQuery(" SELECT * FROM " + TABLA_CLIENTE,null);
+        if(cr != null && cr.moveToFirst())
+        {
+            do
+            {
+                if(cr.getString(6).equals(loft))
+                {
+                    a++;
+                }
+
+            }
+            while(cr.moveToNext());
+        }
+        return a;
+
+    }
 }

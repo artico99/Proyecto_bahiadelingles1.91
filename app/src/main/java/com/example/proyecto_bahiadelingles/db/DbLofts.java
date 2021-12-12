@@ -93,6 +93,28 @@ public class DbLofts extends DbHelper{
 
         return loft;
     }
+    public Loft seleccionarLoftNombre(String nombre)
+    {
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        Loft loft = null;
+        Cursor cursorLoft;
+
+        cursorLoft = db.rawQuery("SELECT * FROM " + TABLA_LOFTS + " WHERE nombre = " + nombre + " LIMIT 1 ", null);
+
+        if(cursorLoft.moveToFirst())
+        {
+            loft = new Loft();
+            loft.setId(cursorLoft.getInt(0));
+            loft.setNombre(cursorLoft.getString(1));
+            loft.setComentario(cursorLoft.getString(2));
+
+        }
+        cursorLoft.close();
+
+        return loft;
+    }
 
     public boolean editarLoft(int id, String nombre, String comentario)
     {
@@ -100,6 +122,9 @@ public class DbLofts extends DbHelper{
 
         DbHelper dbHelper = new DbHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
+        Loft loft;
+        loft = new Loft();
+        String ida;
 
         try
         {
@@ -117,7 +142,29 @@ public class DbLofts extends DbHelper{
         }
         return correcto;
     }
+    public boolean editarLoftcliente(String id, String comentario)
+    {
+        boolean correcto = false;
 
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try
+        {
+
+            db.execSQL(" UPDATE " + TABLA_LOFTS + " SET comentario = '" + comentario + "' WHERE nombre = '" + id + "' ");
+        }
+        catch(Exception ex)
+        {
+            ex.toString();
+            correcto = false;
+        }
+        finally
+        {
+            db.close();
+        }
+        return correcto;
+    }
     public boolean eliminarLoft(int id)
     {
         boolean correcto = false;

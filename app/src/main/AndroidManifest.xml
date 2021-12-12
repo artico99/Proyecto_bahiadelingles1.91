@@ -74,6 +74,10 @@
         <activity
             android:name=".Crear_perfil_cliente"
             android:exported="true" />
+        <activity
+            android:name=".LoginUs"
+            android:exported="true" />
+
     </application>
 
 </manifest>

@@ -12,14 +12,13 @@
         android:orientation="vertical"
         android:padding="20sp">
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/edtLoftUsVer"
+            android:layout_width="369dp"
             android:layout_height="wrap_content"
-            android:text="Loft"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:gravity="center_horizontal"/>
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -106,7 +105,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
+                android:id="@+id/edtCambiarEstado"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Escribir un comentario"
@@ -119,7 +118,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnVolverClienteEditar"
+                android:id="@+id/btnLoftUs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/material_on_surface_stroke"

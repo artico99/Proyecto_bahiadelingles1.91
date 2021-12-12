@@ -15,15 +15,19 @@
         android:orientation="horizontal"
         tools:ignore="UselessParent">
 
-        <TextView
-            android:id="@+id/tvNombreLoft"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/edtLoftUsVer2"
+            android:layout_width="369dp"
             android:layout_height="wrap_content"
-            android:text="Loft"
-            android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:padding="20dp"
-            android:textStyle="bold"/>
+            android:layout_weight="1"
+            android:background="@null"
+
+            android:editable="false"
+            android:ems="10"
+            android:inputType="none"
+            android:textAlignment="center"
+            android:textSize="48sp" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -123,18 +127,19 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/edtEnviarComentario"
+            android:id="@+id/edtCambiarEstado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Escribir un comentario"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnEnviarDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar" />
+        android:text="Cambiar estado" />
 </LinearLayout>
