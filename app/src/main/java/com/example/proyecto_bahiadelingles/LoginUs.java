@@ -25,7 +25,6 @@ public class LoginUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vista_login_user);
         edtLoft = findViewById(R.id.edtUsuarioLoft);
-        edtLoftUsVer = findViewById(R.id.edtLoftUsVer);
         btnIngresar = findViewById(R.id.btnLoginUs);
         DbClientes dbClientes = new DbClientes(LoginUs.this);
 
@@ -33,11 +32,11 @@ public class LoginUs extends AppCompatActivity {
 
 
         DbLofts dbLofts = new DbLofts(LoginUs.this);
-        loft = dbLofts.seleccionarLoftNombre(loftnum);
+        loft = dbLofts.seleccionarLoftNumero(loftnum);
         if(loft != null)
         {
 
-            edtLoftUsVer.setText(loft.getNombre());
+
 
         }
         btnIngresar.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +58,7 @@ public class LoginUs extends AppCompatActivity {
                 {
 
                     DbLofts dbLofts = new DbLofts(LoginUs.this);
-                    loft = dbLofts.seleccionarLoftNombre(loftnum);
+                    loft = dbLofts.seleccionarLoftNumero(loftnum);
                     if(loft != null)
                     {
                         Toast.makeText(LoginUs.this, "correcto",Toast.LENGTH_SHORT).show();

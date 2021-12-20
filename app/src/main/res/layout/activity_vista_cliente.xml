@@ -62,7 +62,7 @@
             android:text="Agua:"
             android:textSize="20dp" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/swAgua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:text="Luz:"
             android:textSize="20dp" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/swLuz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
             android:text="Tv:"
             android:textSize="20dp" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/swTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Escribir un comentario"
+            android:hint="Detalle el estado actual del loft"
             android:inputType="textPersonName"
             android:textAlignment="center" />
     </LinearLayout>

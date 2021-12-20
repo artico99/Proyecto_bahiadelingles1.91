@@ -13,15 +13,17 @@ import com.example.proyecto_bahiadelingles.db.DbLofts;
 
 public class Insertar_loft extends AppCompatActivity
 {
-    EditText edtNombreLoft, edtComentarios;
+    EditText edtNumLoft,edtNombreLoft, edtComentarios;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vista_insertar_loft);
 
+        edtNumLoft = findViewById(R.id.edtNumLoftInsert);
         edtNombreLoft = findViewById(R.id.edtNombreLoftInsert);
         edtComentarios = findViewById(R.id.edtComentarioLoftInsert);
+
         Button btnRegisL= findViewById(R.id.btnRegis);
         Button btnVolver= findViewById(R.id.btnVolver);
 
@@ -32,7 +34,7 @@ public class Insertar_loft extends AppCompatActivity
             public void onClick(View v)
             {
                 DbLofts dbLofts = new DbLofts(Insertar_loft.this);
-                long id = dbLofts.insertarLoft(edtNombreLoft.getText().toString(), edtComentarios.getText().toString());
+                long id = dbLofts.insertarLoft(edtNumLoft.getText().toString(),edtNombreLoft.getText().toString(), edtComentarios.getText().toString());
 
                 if(id > 0)
                 {

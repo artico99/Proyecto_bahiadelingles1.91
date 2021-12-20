@@ -4,27 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#909EF8"
     android:orientation="vertical"
     android:padding="20sp"
-    tools:context=".Ver_loft"
-    android:background="#909EF8">
+    tools:context=".Ver_loft">
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Modificar datos de loft"
         android:gravity="center_horizontal"
+        android:text="Modificar datos de loft"
         android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20sp"
         android:paddingTop="100dp"
         tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Numero"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtnumeroLoft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/viewNombreCliente"
@@ -58,12 +73,44 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/swEstadoLoft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="true"
             android:text="No reservado / Reservado" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Servicios"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swLuzEd"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="Luz" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swAguaEd"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="Agua" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swGasEd"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="Tv" />
 
         <Button
             android:id="@+id/btnGuardarLoft"
@@ -73,22 +120,32 @@
             android:backgroundTint="@color/material_on_surface_stroke"
             android:text="Guardar cambios" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEditarLoft"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_weight="1"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
+            android:orientation="horizontal">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEliminarLoft"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_weight="1"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbEditarLoft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal|start"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbEliminarLoft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:cropToPadding="false"
+                android:duplicateParentState="false"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                app:useCompatPadding="false" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </LinearLayout>

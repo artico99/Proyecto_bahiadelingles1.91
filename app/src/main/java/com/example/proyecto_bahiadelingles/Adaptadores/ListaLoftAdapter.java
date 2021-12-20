@@ -38,7 +38,7 @@ public class ListaLoftAdapter extends RecyclerView.Adapter<ListaLoftAdapter.Loft
     public void onBindViewHolder(@NonNull LoftViewHolder holder, int position)
     {
         holder.tvNombreLoft.setText(listaLofts.get(position).getNombre());
-        holder.tvComentarioLoft.setText(listaLofts.get(position).getComentario());
+        holder.tvComentarioLoft.setText(listaLofts.get(position).getEstado());
     }
 
     @Override

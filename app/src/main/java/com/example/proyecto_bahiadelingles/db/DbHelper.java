@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 7;
     private static final String DATABASE_NOMBRE = "proyecto_bahia_db";
     public static final String TABLA_LOFTS ="lofts";
     public static final String TABLA_CLIENTE ="cliente";
@@ -24,8 +24,12 @@ public class DbHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE " + TABLA_LOFTS + "(" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "nombre TEXT NOT NULL," +
-                "comentario TEXT," +
+                "Numero TEXT NOT NULL," +
+                "nombre TEXT," +
+                "Luz INTEGER," +
+                "Agua INTEGER," +
+                "Gas INTEGER," +
+                "Reservado INTEGER," +
                 "estado TEXT )");
 
         db.execSQL("CREATE TABLE " + TABLA_CLIENTE + "(" +
@@ -56,9 +60,8 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
-        db.execSQL("DROP TABLE " + TABLA_LOFTS);
-        db.execSQL("DROP TABLE " + TABLA_CLIENTE);
-        db.execSQL("DROP TABLE " + TABLA_TRABAJADOR);
+
+        db.execSQL("DROP TABLE " + TABLA_ADMINISTRACION);
         onCreate(db);
     }
 }
