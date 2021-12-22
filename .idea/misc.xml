@@ -5,16 +5,20 @@
       <map>
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/drawable-v24/ic_contacto.xml" value="0.3828125" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_guardar_registro_historico.xml" value="0.33" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_lista_ad_re.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_menu_ad.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_recy_view_ad.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_recycler_clienterh.xml" value="0.14" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_ad.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_cliente.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_cliente_rh.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_ver_loft.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/activity_vista_cliente.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/iniciar_db.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_administracion.xml" value="0.33" />
-        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_cliente.xml" value="0.33" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_cliente.xml" value="0.1" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_clienterh.xml" value="0.1085972850678733" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/lista_item_lofts.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/menu_usuario_principal.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/recycler_cliente.xml" value="0.1" />
@@ -23,7 +27,7 @@
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_crear_perfil_cliente.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_duenos.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_editar_trabajador.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_insertar_cliente.xml" value="0.22" />
+        <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_insertar_cliente.xml" value="0.18" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_insertar_loft.xml" value="0.33" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_listatrabajadores.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Arturo/AndroidStudioProjects/Proyecto_bahiadelingles 1.9/app/src/main/res/layout/vista_login.xml" value="0.23369565217391305" />

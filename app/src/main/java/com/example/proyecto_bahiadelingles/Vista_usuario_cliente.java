@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Vista_usuario_cliente extends AppCompatActivity
 {
 
-    Button btnAgregarCliente,btnMostrarCliente;
+    Button btnAgregarCliente,btnMostrarCliente,btnRegistroHistorico;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class Vista_usuario_cliente extends AppCompatActivity
 
         btnAgregarCliente = (Button)findViewById(R.id.btn_agregar_cliente);
         btnMostrarCliente = (Button)findViewById(R.id.btn_mostrar_clientee);
-
+        btnRegistroHistorico = findViewById(R.id.btn_mostrar_clienteRH);
         btnAgregarCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -35,6 +35,14 @@ public class Vista_usuario_cliente extends AppCompatActivity
             public void onClick(View v)
             {
                 Intent intent =  new Intent(Vista_usuario_cliente.this, Listar_cliente.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRegistroHistorico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(Vista_usuario_cliente.this, Listar_clienteRH.class);
                 startActivity(intent);
             }
         });

@@ -6,22 +6,28 @@ public class Cliente
     String nombre;
     String apellido;
     String rut;
+    String fechaEntrada;
+    String fechaSalida;
     String telefono;
     String correo;
     String numeroLoft;
+    String comportamiento;
     String comentario;
 
     public Cliente() {
     }
 
-    public Cliente(int id, String nombre, String apellido, String rut, String telefono, String correo, String numeroLoft, String comentario) {
+    public Cliente(int id, String nombre, String apellido, String rut, String fechaEntrada, String fechaSalida, String telefono, String correo, String numeroLoft, String comportamiento, String comentario) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.rut = rut;
+        this.fechaEntrada = fechaEntrada;
+        this.fechaSalida = fechaSalida;
         this.telefono = telefono;
         this.correo = correo;
         this.numeroLoft = numeroLoft;
+        this.comportamiento = comportamiento;
         this.comentario = comentario;
     }
 
@@ -57,6 +63,22 @@ public class Cliente
         this.rut = rut;
     }
 
+    public String getFechaEntrada() {
+        return fechaEntrada;
+    }
+
+    public void setFechaEntrada(String fechaEntrada) {
+        this.fechaEntrada = fechaEntrada;
+    }
+
+    public String getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(String fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
+
     public String getTelefono() {
         return telefono;
     }
@@ -79,6 +101,14 @@ public class Cliente
 
     public void setNumeroLoft(String numeroLoft) {
         this.numeroLoft = numeroLoft;
+    }
+
+    public String getComportamiento() {
+        return comportamiento;
+    }
+
+    public void setComportamiento(String comportamiento) {
+        this.comportamiento = comportamiento;
     }
 
     public String getComentario() {

@@ -26,12 +26,12 @@
             android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="372dp"
-            android:layout_height="565dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6D81CC"
             android:orientation="vertical"
             android:padding="20sp"
-            android:paddingTop="20sp"
-            android:background="#6D81CC">
+            android:paddingTop="20sp">
 
             <TextView
                 android:id="@+id/viewNombreCliente"
@@ -83,6 +83,70 @@
                 android:ems="10"
                 android:hint="Ingresar rut"
                 android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fecha Entrada"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cale1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cale1"
+                    android:backgroundTint="@color/material_on_surface_stroke"
+                    android:text="Abrir calendario" />
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fecha Salida"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cale"
+                    android:backgroundTint="@color/material_on_surface_stroke"
+                    android:text="Abrir Calendario" />
+
+                <EditText
+                    android:id="@+id/edt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView23"
@@ -152,14 +216,14 @@
                 android:hint="escribir un comentario"
                 android:inputType="textPersonName" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/btnIngresarCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/material_on_surface_stroke"
+                android:text="Ingresar nuevo cliente" />
 
-        <Button
-            android:id="@+id/btnIngresarCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/material_on_surface_stroke"
-            android:text="Ingresar nuevo cliente" />
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

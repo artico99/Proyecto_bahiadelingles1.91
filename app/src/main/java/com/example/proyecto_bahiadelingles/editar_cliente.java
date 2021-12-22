@@ -16,7 +16,7 @@ import com.example.proyecto_bahiadelingles.model.Loft;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class editar_cliente extends AppCompatActivity {
-    EditText edtNombreClienteVer, edtApellidoClienteVer, edtRutClienteVer, edtTelefonoClienteVer, edtCorreoClienteVer, edtNumLoftClienteVer, edtComentarioClienteVer;
+    EditText edtNombreClienteVer, edtApellidoClienteVer, edtRutClienteVer, edtTelefonoClienteVer, edtCorreoClienteVer, edtNumLoftClienteVer, edtComentarioClienteVer,edtfechaentrada,edtfechasalida;
     Button btnGuardarClienteVer;
     FloatingActionButton fbEditarCliente, fbEliminarCliente;
 
@@ -29,7 +29,8 @@ public class editar_cliente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_cliente);
-
+        edtfechaentrada = findViewById(R.id.edtFechaEntrada);
+        edtfechasalida = findViewById(R.id.edtFechaSalida);
         edtNombreClienteVer = findViewById(R.id.edtNombreClienteVer);
         edtApellidoClienteVer = findViewById(R.id.edtApellidoClienteVer);
         edtRutClienteVer = findViewById(R.id.edtRutClienteVer);
@@ -67,6 +68,8 @@ public class editar_cliente extends AppCompatActivity {
             edtCorreoClienteVer.setText(cliente.getCorreo());
             edtNumLoftClienteVer.setText(cliente.getNumeroLoft());
             edtComentarioClienteVer.setText(cliente.getComentario());
+            edtfechaentrada.setText(cliente.getFechaEntrada());
+            edtfechasalida.setText(cliente.getFechaSalida());
         }
 
         btnGuardarClienteVer.setOnClickListener(new View.OnClickListener() {
@@ -74,11 +77,11 @@ public class editar_cliente extends AppCompatActivity {
             public void onClick(View v) {
                 if (!edtNombreClienteVer.getText().toString().equals("")) {
                     correcto = dbClientes.editarCliente(id, edtNombreClienteVer.getText().toString(), edtApellidoClienteVer.getText().toString(),
-                            edtRutClienteVer.getText().toString(), edtTelefonoClienteVer.getText().toString(), edtCorreoClienteVer.getText().toString(),
+                            edtRutClienteVer.getText().toString(),edtfechaentrada.getText().toString(),edtfechasalida.getText().toString(), edtTelefonoClienteVer.getText().toString(), edtCorreoClienteVer.getText().toString(),
                             edtNumLoftClienteVer.getText().toString(), edtComentarioClienteVer.getText().toString());
                     if (!correcto) {
                         Toast.makeText(editar_cliente.this, "CLIENTE MODIFICADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
-                        verRegistroLoft();
+
                     } else {
                         Toast.makeText(editar_cliente.this, "ERROR AL MODIFICAR CLIENTE", Toast.LENGTH_SHORT).show();
                     }
@@ -90,9 +93,5 @@ public class editar_cliente extends AppCompatActivity {
         });
     }
 
-    private void verRegistroLoft() {
-        Intent intent = new Intent(this, Ver_loft.class);
-        intent.putExtra("ID", id);
-        startActivity(intent);
-    }
+
 }

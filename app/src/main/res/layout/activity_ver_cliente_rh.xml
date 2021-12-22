@@ -8,11 +8,10 @@
     android:padding="20dp">
 
     <TextView
-        android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Modificar datos de cliente"
+        android:text="Datos Cliente"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -28,7 +27,7 @@
             android:text="Nombre:" />
 
         <EditText
-            android:id="@+id/edtNombreClienteVer"
+            android:id="@+id/edtNombreClienteVerRH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,7 +47,7 @@
             android:text="Apellido:" />
 
         <EditText
-            android:id="@+id/edtApellidoClienteVer"
+            android:id="@+id/edtApellidoClienteVerRH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -68,7 +67,7 @@
             android:text="Rut:" />
 
         <EditText
-            android:id="@+id/edtRutClienteVer"
+            android:id="@+id/edtRutClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -89,7 +88,7 @@
             android:text="Fecha de Entrada:" />
 
         <EditText
-            android:id="@+id/edtFechaEntrada"
+            android:id="@+id/edtFechaEntradaRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -110,7 +109,7 @@
             android:text="Fecha de Salida:" />
 
         <EditText
-            android:id="@+id/edtFechaSalida"
+            android:id="@+id/edtFechaSalidaRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -132,7 +131,7 @@
             android:text="Correo" />
 
         <EditText
-            android:id="@+id/edtCorreoClienteVer"
+            android:id="@+id/edtCorreoClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -153,7 +152,7 @@
             android:text="Teléfono:" />
 
         <EditText
-            android:id="@+id/edtTelefonoClienteVer"
+            android:id="@+id/edtTelefonoClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -174,7 +173,7 @@
             android:text="N° de loft:" />
 
         <EditText
-            android:id="@+id/edtNumLoftClienteVer"
+            android:id="@+id/edtNumLoftClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -196,7 +195,7 @@
             android:text="Comentario:" />
 
         <EditText
-            android:id="@+id/edtComentarioClienteVer"
+            android:id="@+id/edtComentarioClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -205,40 +204,24 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnGuardarClienteVer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_on_surface_stroke"
-        android:text="Guardar cambios" />
-
-    <Button
-        android:id="@+id/btnRegistroh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_on_surface_stroke"
-        android:text="Guardar en registro historico" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEditarCliente"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="62dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
+            android:layout_weight="1"
+            android:text="Comportamiento" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEliminarCliente"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/edtComportamientoRH"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
 </LinearLayout>

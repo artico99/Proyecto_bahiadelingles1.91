@@ -18,8 +18,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class Ver_cliente extends AppCompatActivity
 {
 
-    EditText edtNombreClienteVer, edtApellidoClienteVer, edtRutClienteVer, edtTelefonoClienteVer, edtCorreoClienteVer, edtNumLoftClienteVer, edtComentarioClienteVer;
-    Button btnGuardarCliente;
+    EditText edtNombreClienteVer, edtApellidoClienteVer, edtRutClienteVer, edtTelefonoClienteVer, edtCorreoClienteVer, edtNumLoftClienteVer, edtComentarioClienteVer,edtfechaentrada,edtfechasalida;
+    Button btnGuardarCliente,btnGuardarRH;
     FloatingActionButton fbEditarCliente, fbEliminarCliente;
 
     Cliente cliente;
@@ -31,6 +31,8 @@ public class Ver_cliente extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_cliente);
 
+        edtfechaentrada = findViewById(R.id.edtFechaEntrada);
+        edtfechasalida = findViewById(R.id.edtFechaSalida);
         edtNombreClienteVer = findViewById(R.id.edtNombreClienteVer);
         edtApellidoClienteVer= findViewById(R.id.edtApellidoClienteVer);
         edtRutClienteVer = findViewById(R.id.edtRutClienteVer);
@@ -39,7 +41,7 @@ public class Ver_cliente extends AppCompatActivity
         edtNumLoftClienteVer = findViewById(R.id.edtNumLoftClienteVer);
         edtComentarioClienteVer = findViewById(R.id.edtComentarioClienteVer);
 
-
+        btnGuardarRH = findViewById(R.id.btnRegistroh);
         btnGuardarCliente = findViewById(R.id.btnGuardarClienteVer);
         fbEditarCliente = findViewById(R.id.fbEditarCliente);
         fbEliminarCliente = findViewById(R.id.fbEliminarCliente);
@@ -73,7 +75,8 @@ public class Ver_cliente extends AppCompatActivity
             edtCorreoClienteVer.setText(cliente.getCorreo());
             edtNumLoftClienteVer.setText(cliente.getNumeroLoft());
             edtComentarioClienteVer.setText(cliente.getComentario());
-
+            edtfechaentrada.setText(cliente.getFechaEntrada());
+            edtfechasalida.setText(cliente.getFechaSalida());
             btnGuardarCliente.setVisibility(View.INVISIBLE);
 
             edtNombreClienteVer.setInputType(InputType.TYPE_NULL);
@@ -119,6 +122,14 @@ public class Ver_cliente extends AppCompatActivity
 
                             }
                         }).show();
+            }
+        });
+        btnGuardarRH.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Ver_cliente.this, guardarRegistroHistorico.class);
+                intent.putExtra("ID", id);
+                startActivity(intent);
             }
         });
     }

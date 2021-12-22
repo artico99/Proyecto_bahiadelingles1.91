@@ -70,23 +70,24 @@ public class editar_administrador extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                if(!edtUsuarioAdVer.getText().toString().equals(""))
+                if(edtUsuarioAdVer.getText().toString().equals("")||edtContraseñaAdVer.getText().toString().equals(""))
+                {
+
+                    Toast.makeText(editar_administrador.this, "Debe rellenar ambos campos", Toast.LENGTH_SHORT).show();
+                }
+                else
                 {
                     correcto = dbadministracion.editarAdministracion(id, edtUsuarioAdVer.getText().toString(), edtContraseñaAdVer.getText().toString());
                     if(!correcto)
                     {
-                        Toast.makeText(editar_administrador.this, "LOFT MODIFICADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
-                        verRegistroLoft();
+                        Toast.makeText(editar_administrador.this, "administrador editado", Toast.LENGTH_SHORT).show();
+
                     }
                     else
                     {
-                        Toast.makeText(editar_administrador.this, "ERROR AL MODIFICAR LOFT", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(editar_administrador.this, "Error", Toast.LENGTH_SHORT).show();
                     }
 
-                }
-                else
-                {
-                    Toast.makeText(editar_administrador.this, "DEBE ESCRIBIR EL NOMBRE", Toast.LENGTH_SHORT).show();
                 }
             }
         });

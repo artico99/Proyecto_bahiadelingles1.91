@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Modificar datos de cliente"
+        android:text="Guardar en registro historico"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -28,11 +28,13 @@
             android:text="Nombre:" />
 
         <EditText
-            android:id="@+id/edtNombreClienteVer"
+            android:id="@+id/edtNombreClienteVerRH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="false"
+
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
 
     </LinearLayout>
 
@@ -48,11 +50,12 @@
             android:text="Apellido:" />
 
         <EditText
-            android:id="@+id/edtApellidoClienteVer"
+            android:id="@+id/edtApellidoClienteVerRH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,12 +71,13 @@
             android:text="Rut:" />
 
         <EditText
-            android:id="@+id/edtRutClienteVer"
+            android:id="@+id/edtRutClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,18 +87,19 @@
 
         <TextView
             android:id="@+id/textView31"
-            android:layout_width="24dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Fecha de Entrada:" />
-
-        <EditText
-            android:id="@+id/edtFechaEntrada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Fecha de entrada" />
+
+        <EditText
+            android:id="@+id/edtFechaEntradaRH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -104,19 +109,20 @@
 
         <TextView
             android:id="@+id/textView31"
-            android:layout_width="24dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Fecha de Salida:" />
-
-        <EditText
-            android:id="@+id/edtFechaSalida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:text="Fecha de salida" />
 
+        <EditText
+            android:id="@+id/edtFechaSalidaRH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+
+            android:ems="10"
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -132,12 +138,13 @@
             android:text="Correo" />
 
         <EditText
-            android:id="@+id/edtCorreoClienteVer"
+            android:id="@+id/edtCorreoClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -153,12 +160,13 @@
             android:text="Teléfono:" />
 
         <EditText
-            android:id="@+id/edtTelefonoClienteVer"
+            android:id="@+id/edtTelefonoClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
     </LinearLayout>
 
     <LinearLayout
@@ -174,12 +182,33 @@
             android:text="N° de loft:" />
 
         <EditText
-            android:id="@+id/edtNumLoftClienteVer"
+            android:id="@+id/edtNumLoftClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="false"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comportamiento" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -196,49 +225,26 @@
             android:text="Comentario:" />
 
         <EditText
-            android:id="@+id/edtComentarioClienteVer"
+            android:id="@+id/edtComentarioClienteVerRH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:editable="true"
             android:ems="10"
             android:inputType="textPersonName" />
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnGuardarClienteVer"
+        android:id="@+id/btnGuardarClienteVerRH"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/material_on_surface_stroke"
         android:text="Guardar cambios" />
 
-    <Button
-        android:id="@+id/btnRegistroh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_on_surface_stroke"
-        android:text="Guardar en registro historico" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEditarCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fbEliminarCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
-    </LinearLayout>
+        android:orientation="horizontal"/>
 
 </LinearLayout>

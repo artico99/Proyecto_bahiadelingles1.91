@@ -8,11 +8,11 @@ import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 11;
     private static final String DATABASE_NOMBRE = "proyecto_bahia_db";
     public static final String TABLA_LOFTS ="lofts";
     public static final String TABLA_CLIENTE ="cliente";
-    public static  final String TABLA_TRABAJADOR ="trabajador";
+    public static final String TABLA_CLIENTEH ="clienteh";
     public static  final String TABLA_ADMINISTRACION ="administracion";
 
     public DbHelper(@Nullable Context context) {
@@ -21,7 +21,6 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL("CREATE TABLE " + TABLA_LOFTS + "(" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "Numero TEXT NOT NULL," +
@@ -37,31 +36,40 @@ public class DbHelper extends SQLiteOpenHelper {
                 "nombre TEXT NOT NULL," +
                 "apellido TEXT NOT NULL," +
                 "rut TEXT NOT NULL," +
+                "fechaE TEXT NOT NULL," +
+                "fechaS TEXT NOT NULL," +
                 "telefono TEXT NOT NULL," +
                 "correo TEXT NOT NULL," +
                 "numeroLoft TEXT NOT NULL," +
                 "comentario TEXT )");
 
-        db.execSQL("CREATE TABLE " + TABLA_TRABAJADOR + "(" +
+        db.execSQL("CREATE TABLE " + TABLA_CLIENTEH + "(" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "nombre TEXT NOT NULL," +
                 "apellido TEXT NOT NULL," +
                 "rut TEXT NOT NULL," +
+                "fechaE TEXT NOT NULL," +
+                "fechaS TEXT NOT NULL," +
                 "telefono TEXT NOT NULL," +
                 "correo TEXT NOT NULL," +
+                "numeroLoft TEXT NOT NULL," +
+                "comportamiento TEXT NOT NULL," +
                 "comentario TEXT )");
 
         db.execSQL("CREATE TABLE " + TABLA_ADMINISTRACION + "(" +
                 "ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "usuario TEXT NOT NULL," +
                 "contraseña TEXT NOT NULL)");
+
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
 
-        db.execSQL("DROP TABLE " + TABLA_ADMINISTRACION);
+
+
         onCreate(db);
     }
 }

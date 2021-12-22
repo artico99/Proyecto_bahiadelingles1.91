@@ -76,6 +76,30 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20sp">
+
+            <TextView
+                android:id="@+id/tvmostrar"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mostrar Registro Historico"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_mostrar_clienteRH"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/material_on_surface_stroke"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 

@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".ver_clienteRH"
+            android:exported="true" />
+        <activity
+            android:name=".Listar_clienteRH"
+            android:exported="true" />
+        <activity
+            android:name=".guardarRegistroHistorico"
+            android:exported="false" />
+        <activity
             android:name=".Vista_cliente"
             android:exported="true" />
         <activity
@@ -77,7 +86,6 @@
         <activity
             android:name=".LoginUs"
             android:exported="true" />
-
     </application>
 
 </manifest>
