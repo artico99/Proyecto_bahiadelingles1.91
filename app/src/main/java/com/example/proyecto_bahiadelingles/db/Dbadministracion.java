@@ -7,8 +7,16 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.proyecto_bahiadelingles.model.Administracion;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.net.URL;
 import java.util.ArrayList;
 
 public class Dbadministracion extends DbHelper {
@@ -121,7 +129,9 @@ public class Dbadministracion extends DbHelper {
 
     public Administracion seleccionarAdministracion(int id)
     {
-        DbHelper dbHelper = new DbHelper(context);
+
+
+                /*DbHelper dbHelper = new DbHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         Administracion administracion = null;
@@ -140,7 +150,8 @@ public class Dbadministracion extends DbHelper {
         }
         cursorAdministracion.close();
 
-        return administracion;
+        return administracion; */
+        return null;
     }
 
     public int login (String usuario, String pass)

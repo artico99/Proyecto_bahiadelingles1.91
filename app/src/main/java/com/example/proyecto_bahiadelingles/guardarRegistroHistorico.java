@@ -1,7 +1,10 @@
 package com.example.proyecto_bahiadelingles;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -13,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.proyecto_bahiadelingles.db.DbClientes;
 import com.example.proyecto_bahiadelingles.model.Cliente;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -24,6 +28,7 @@ public class guardarRegistroHistorico extends AppCompatActivity {
     EditText edtNombreClienteVer, edtApellidoClienteVer, edtRutClienteVer, edtTelefonoClienteVer, edtCorreoClienteVer, edtNumLoftClienteVer, edtComentarioClienteVer,edtfechaentrada,edtfechasalida;
     Button btnguardar;
     String comportamiento;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +50,7 @@ public class guardarRegistroHistorico extends AppCompatActivity {
         ArrayAdapter <String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,opciones);
         spinner1.setAdapter(adapter);
 
-        String seleccion = spinner1.getSelectedItem().toString();
+
 
 
 
@@ -82,38 +87,38 @@ public class guardarRegistroHistorico extends AppCompatActivity {
             edtfechaentrada.setText(cliente.getFechaEntrada());
             edtfechasalida.setText(cliente.getFechaSalida());
         }
-        if(seleccion.equals(""))
-        {
 
-        }
-        else
-        {
-            if(seleccion.equals("Buen comportamiento"))
-            {
-                comportamiento = "Buen comportamiento";
-            }
-            else
-            {
-                if(seleccion.equals("Comportamiento regular"))
-                {
-                    comportamiento = "Comportamiento regular";
-                }
-                else
-                {
-                    if(seleccion.equals("Mal comportamiento"))
-                    {
-                        comportamiento = "Mal comportamiento";
-                    }
-                }
-            }
-        }
         btnguardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String seleccion = spinner1.getSelectedItem().toString();
 
+                if(seleccion.equals(""))
+                {
 
-
+                }
+                else
+                {
+                    if(seleccion.equals(""))
+                    {
+                        comportamiento = "Buen comportamiento";
+                    }
+                    else
+                    {
+                        if(seleccion.equals("Comportamiento regular"))
+                        {
+                            comportamiento = "Comportamiento regular";
+                        }
+                        else
+                        {
+                            if(seleccion.equals("Mal comportamiento"))
+                            {
+                                comportamiento = "Mal comportamiento";
+                            }
+                        }
+                    }
+                }
 
 
                     DbClientes dbClientes = new DbClientes(guardarRegistroHistorico.this);
@@ -137,6 +142,9 @@ public class guardarRegistroHistorico extends AppCompatActivity {
                 }
             }
         });
+
+
+
 
     }
 

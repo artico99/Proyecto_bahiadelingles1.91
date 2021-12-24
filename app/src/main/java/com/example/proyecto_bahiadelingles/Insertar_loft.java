@@ -33,17 +33,25 @@ public class Insertar_loft extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                DbLofts dbLofts = new DbLofts(Insertar_loft.this);
-                long id = dbLofts.insertarLoft(edtNumLoft.getText().toString(),edtNombreLoft.getText().toString(), edtComentarios.getText().toString());
-
-                if(id > 0)
+                if(edtNumLoft.getText().toString().equals("")||edtNombreLoft.getText().toString().equals("")||edtComentarios.getText().toString().equals(""))
                 {
-                    Toast.makeText(Insertar_loft.this, "Loft Guardado correctamente", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Insertar_loft.this, "Debe rellenar todos los campos", Toast.LENGTH_SHORT).show();
                 }
                 else
+                {
+                    DbLofts dbLofts = new DbLofts(Insertar_loft.this);
+                    long id = dbLofts.insertarLoft(edtNumLoft.getText().toString(),edtNombreLoft.getText().toString(), edtComentarios.getText().toString());
+
+                    if(id > 0)
+                    {
+                        Toast.makeText(Insertar_loft.this, "Loft Guardado correctamente", Toast.LENGTH_SHORT).show();
+                    }
+                    else
                     {
                         Toast.makeText(Insertar_loft.this, "Error al guardar loft", Toast.LENGTH_SHORT).show();
                     }
+                }
+
 
             }
         });

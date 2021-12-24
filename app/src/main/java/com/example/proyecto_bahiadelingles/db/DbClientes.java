@@ -250,6 +250,31 @@ public class DbClientes extends DbHelper{
         return correcto;
     }
 
+    public boolean eliminarClienteRH(int id)
+    {
+        boolean correcto = false;
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try
+        {
+
+            db.execSQL(" DELETE FROM " + TABLA_CLIENTEH + " WHERE id = '" + id + "' ");
+            correcto = true;
+        }
+        catch(Exception ex)
+        {
+            ex.toString();
+            correcto = false;
+        }
+        finally
+        {
+            db.close();
+        }
+        return correcto;
+    }
+
     public boolean mostrarNombreLoftCliente(int id)
     {
         boolean correcto = false;

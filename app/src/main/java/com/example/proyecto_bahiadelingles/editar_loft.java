@@ -21,7 +21,7 @@ public class editar_loft extends AppCompatActivity
     FloatingActionButton fbEditarLoft, fbEliminarLoft;
     SwitchCompat switchCompat;
     boolean correcto = false;
-    String edtPrueba;
+
     int reservado = 0;
     int Agua = 0;
     int Luz = 0;
@@ -86,27 +86,28 @@ public class editar_loft extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                if(!edtNombreLoft.getText().toString().equals(""))
+                if(edtNombreLoft.getText().toString().equals("")||edtnumLoft.getText().toString().equals("")||edtComentarioLoft.getText().toString().equals(""))
                 {
-                    if(switchCompat.isChecked()){reservado = 1;} else {reservado = 0;}
-                    if(swAgua.isChecked()){Agua = 1;} else {Agua = 0;}
-                    if(swGas.isChecked()){Gas = 1;} else {Gas = 0;}
-                    if(swLuz.isChecked()){Luz = 1;} else {Luz = 0;}
-                    correcto = dbLofts.editarLoft(id,edtnumLoft.getText().toString(), edtNombreLoft.getText().toString(), edtComentarioLoft.getText().toString(),Luz,Agua,Gas,reservado);
-                    if(!correcto)
-                    {
-                        Toast.makeText(editar_loft.this, "LOFT MODIFICADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
-                        verRegistroLoft();
-                    }
-                    else
-                    {
-                        Toast.makeText(editar_loft.this, "ERROR AL MODIFICAR LOFT", Toast.LENGTH_SHORT).show();
-                    }
+                    Toast.makeText(editar_loft.this, "Debe rellenar todos los campos", Toast.LENGTH_SHORT).show();
 
                 }
                 else
                     {
-                        Toast.makeText(editar_loft.this, "DEBE ESCRIBIR EL NOMBRE", Toast.LENGTH_SHORT).show();
+                        if(switchCompat.isChecked()){reservado = 1;} else {reservado = 0;}
+                        if(swAgua.isChecked()){Agua = 1;} else {Agua = 0;}
+                        if(swGas.isChecked()){Gas = 1;} else {Gas = 0;}
+                        if(swLuz.isChecked()){Luz = 1;} else {Luz = 0;}
+                        correcto = dbLofts.editarLoft(id,edtnumLoft.getText().toString(), edtNombreLoft.getText().toString(), edtComentarioLoft.getText().toString(),Luz,Agua,Gas,reservado);
+                        if(!correcto)
+                        {
+                            Toast.makeText(editar_loft.this, "LOFT MODIFICADO CORRECTAMENTE", Toast.LENGTH_SHORT).show();
+                            verRegistroLoft();
+                        }
+                        else
+                        {
+                            Toast.makeText(editar_loft.this, "ERROR AL MODIFICAR LOFT", Toast.LENGTH_SHORT).show();
+                        }
+
                     }
             }
         });

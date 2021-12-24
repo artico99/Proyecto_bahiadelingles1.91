@@ -11,18 +11,23 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyecto_bahiadelingles.R;
+import com.example.proyecto_bahiadelingles.model.Administracion;
 import com.example.proyecto_bahiadelingles.model.Loft;
 import com.example.proyecto_bahiadelingles.Ver_loft;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListaLoftAdapter extends RecyclerView.Adapter<ListaLoftAdapter.LoftViewHolder> {
 
     ArrayList<Loft>listaLofts;
-
+    ArrayList<Loft> listaOriginal;
     public ListaLoftAdapter(ArrayList<Loft>listaLofts)
     {
         this.listaLofts = listaLofts;
+        listaOriginal = new ArrayList<>();
+        listaOriginal.addAll(listaLofts);
     }
 
     @NonNull
@@ -71,5 +76,34 @@ public class ListaLoftAdapter extends RecyclerView.Adapter<ListaLoftAdapter.Loft
                 }
             });
         }
+    }
+    public void filtradoL (String txtBuscar)
+    {
+        int longuitud = txtBuscar.length();
+        if(longuitud==0)
+        {
+            listaLofts.clear();
+            listaLofts.addAll(listaOriginal);
+        }
+        else
+        {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N)
+            {
+                List<Loft> collecion = listaLofts.stream().filter(i -> i.getNombre().toLowerCase().contains(txtBuscar.toLowerCase())).collect(Collectors.toList());
+                listaLofts.clear();
+                listaLofts.addAll(collecion);
+            }
+            else
+            {
+                for (Loft c:listaOriginal)
+                {
+                    if(c.getNombre().toLowerCase().contains(txtBuscar.toLowerCase()))
+                    {
+                        listaLofts.add(c);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 }

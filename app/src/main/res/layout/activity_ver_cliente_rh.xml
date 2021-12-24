@@ -223,5 +223,11 @@
             android:ems="10"
             android:inputType="textPersonName" />
     </LinearLayout>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbEliminarClienteHR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
 </LinearLayout>

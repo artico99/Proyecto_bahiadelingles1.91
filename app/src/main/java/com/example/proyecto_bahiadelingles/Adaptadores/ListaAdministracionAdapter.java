@@ -12,16 +12,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyecto_bahiadelingles.R;
 import com.example.proyecto_bahiadelingles.model.Administracion;
+import com.example.proyecto_bahiadelingles.model.Cliente;
 import com.example.proyecto_bahiadelingles.ver_Administracion;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListaAdministracionAdapter extends RecyclerView.Adapter<ListaAdministracionAdapter.AdministracionViewHolder> {
 
     ArrayList<Administracion> listaAdministracion;
-    public ListaAdministracionAdapter(ArrayList<Administracion> listaAdministracion)
+    ArrayList<Administracion> listaOriginal;
+    public ListaAdministracionAdapter(ArrayList<Administracion> listaAdministracion, Context applicationContext)
     {
         this.listaAdministracion = listaAdministracion;
+        listaOriginal = new ArrayList<>();
+        listaOriginal.addAll(listaAdministracion);
     }
 
     @NonNull
@@ -66,6 +72,36 @@ public class ListaAdministracionAdapter extends RecyclerView.Adapter<ListaAdmini
             });
 
         }
+
+    }
+    public void filtradoAd (String txtBuscar)
+    {
+        int longuitud = txtBuscar.length();
+        if(longuitud==0)
+        {
+            listaAdministracion.clear();
+            listaAdministracion.addAll(listaOriginal);
+        }
+        else
+        {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N)
+            {
+                List<Administracion> collecion = listaAdministracion.stream().filter(i -> i.getUsuario().toLowerCase().contains(txtBuscar.toLowerCase())).collect(Collectors.toList());
+                listaAdministracion.clear();
+                listaAdministracion.addAll(collecion);
+            }
+            else
+            {
+                for (Administracion c:listaOriginal)
+                {
+                    if(c.getUsuario().toLowerCase().contains(txtBuscar.toLowerCase()))
+                    {
+                        listaAdministracion.add(c);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 
 }

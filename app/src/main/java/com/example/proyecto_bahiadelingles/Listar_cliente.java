@@ -42,6 +42,7 @@ public class Listar_cliente extends AppCompatActivity implements SearchView.OnQu
         listaCliente.setAdapter(adapter);
 
         txtBuscarCl.setOnQueryTextListener(this);
+
     }
 
     @Override
